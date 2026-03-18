@@ -243,7 +243,7 @@ export function ChatWindow({ userId, onToggleSidebar }: ChatWindowProps) {
         </div>
       </div>
       
-      <div className="absolute bottom-0 left-0 right-0 px-3 py-4 sm:px-6 sm:py-5 bg-gradient-to-t from-background/95 via-background/80 to-transparent pointer-events-none pb-[env(safe-area-inset-bottom,0)]">
+      <div className="absolute bottom-0 left-0 right-0 px-3 py-4 sm:px-6 sm:py-5 bg-gradient-to-t from-background/95 via-background/80 to-transparent pb-[env(safe-area-inset-bottom,0)] z-50">
         <div className="content-width max-w-3xl pointer-events-auto">
           <ChatInput onSend={sendMessage} disabled={false} isLoading={isLoading} />
         </div>

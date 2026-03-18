@@ -37,8 +37,7 @@ export function ChatLayout({ userId, userEmail, userAvatar }: ChatLayoutProps) {
       <aside
         className={`
           h-full shrink-0 left-0 z-50 md:z-auto
-          transition-[width] duration-300 ease-out
-          ${sidebarCollapsed ? "w-0 overflow-hidden md:w-[72px]" : "w-72 fixed md:relative md:left-auto"}
+          transition-[width] duration-300 ease-out ${sidebarCollapsed ? "w-0 overflow-hidden md:w-[72px]" : "w-72 fixed md:relative md:left-auto"}
         `}
       >
         <Sidebar

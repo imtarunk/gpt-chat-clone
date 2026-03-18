@@ -102,6 +102,7 @@ export function ChatInput({ onSend, disabled, isLoading }: ChatInputProps) {
           onKeyDown={handleKeyDown}
           placeholder="Message AI..."
           rows={1}
+          autoFocus
           disabled={disabled || isLoading}
           className="flex-1 min-h-[44px] max-h-[200px] resize-none bg-transparent px-4 py-2.5 text-[15px] font-medium placeholder:text-muted-foreground/60 focus:outline-none no-scrollbar leading-relaxed"
         />
